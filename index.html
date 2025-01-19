@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Lobby</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+
+    <h1>Multiplayer Game Lobby</h1>
+    
+    <div id="create-join">
+        <button onclick="createLobby()">Create Lobby</button>
+        <!-- <input type="text" id="lobbyId" placeholder="Enter Lobby ID"> -->
+        <!-- <button onclick="joinLobby()">Join Lobby</button> -->
+    </div>
+
+    <div id="lobby">
+        <!-- <h2>Lobby: <span id="lobby-code"></span></h2> -->
+        <h3>Players:</h3>
+        <ul id="player-list"></ul>
+        <button id="start-game-btn" onclick="startGame()">Start Game</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
